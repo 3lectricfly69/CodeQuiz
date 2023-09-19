@@ -49,3 +49,6 @@ function displayQuestion(i){
     document.getElementById("choice3").innerHTML = question.choices[3];
     expectedAnswer = question.answer;
 }
+function buttonClicked(){
+    displayQuestion(currentQuestion + 1);
+}
