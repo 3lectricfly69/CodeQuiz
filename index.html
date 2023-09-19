@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+crossorigin="anonymous">
+<Link rel=“stylesheet” type=“text/css” href=“style.css”>
+<title>Code Quiz</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="">View High Scores</a></li>
+            <li><a href="">Time:</a></li>
+        </ul>
+        <div>Current Time &amp; Date: <br />
+            <span id="time-display"></span></div>
+<h1 style="text-align:center;">Code Quiz</h1>
+    </header>
+</body>
+    <section>
+<h2 style="margin: 0%;">"Try to answer the following code-related questions 
+    within the time limit. Keep in mind that incorrect answers will
+    penalize your score/time by ten seconds!</h2>
+    </section>
+    <div class="container">
+        <button onclick="begin()" class = "btn-primary" id = "startButton" style = " float: center; width: 200px; height: 100px;">
+            Begin
+        </button>
+    </div>  
+
+    <div class = "container" >
+        <div class = "question" id = "question">
+        </div>
+        <button onclick="buttonClicked()" class = "choices" id = "choice0">
+        </button>
+        <button onclick="buttonClicked()" class = "choices" id = "choice1">
+        </button>
+        <button onclick="buttonClicked()" class = "choices" id = "choice2">
+        </button>
+        <button onclick="buttonClicked()" class = "choices" id = "choice3">
+        </button>
+        <div class = "answerRightWrong" id = "answerRightWrong">   
+        </div>
+        <div id = "timer">
+        </div>
+        <div id="score">
+        Total Score:
+        </div>
+    </div>
+<script src= "script.js"></script>
+</body>
+</html>
+
+
+    <!-- Title page as Code Quiz.
+    Present the start quiz button.
+    Timer starts and I am presented with a question
+    I answer a question, I am presented with another question
+    I answer a question incorrectly - time is subtracted from the clock
+    Game is over when all questions are answered or the timer reaches 0. This is when "Game Over" is presented.
+    The game is over, I can save my initials and score. -->
